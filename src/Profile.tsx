@@ -1,4 +1,3 @@
-import React from 'react';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaGraduationCap, FaBriefcase, FaAward, FaTools } from 'react-icons/fa';
 
 function Profile() {
