@@ -41,7 +41,10 @@ function Profile() {
           {language === 'en' ? 'Bangkungsri, Bangkoknoi, Bangkok 10700' : 'บางขุนศรี, บางกอกน้อย, กรุงเทพฯ 10700'}
         </p>
         <p className="mt-2 text-gray-600 flex items-center sm:justify-center">
-          <FaPhone className="mr-2" /> 085-664-6929
+          <FaPhone className="mr-2" />
+          <a href="tel:085-664-6929" className="text-blue-500">
+            085-664-6929
+          </a>
         </p>
         <p className="mt-2 text-gray-600 flex items-center sm:justify-center">
           <FaEnvelope className="mr-2" />{" "}
@@ -112,14 +115,14 @@ function Profile() {
             <>
               <li>
                 <strong>2021-Present:</strong> Educator, Faculty of Medicine Vajira Hospital
-                <ul className="list-disc list-inside ml-5 mt-1">
+                <ul className="list-disc list-inside ml-2 mt-1">
                   <li>Arranged timetables for pre-clinical medical students.</li>
                   <li>Implemented teaching and learning processes.</li>
                 </ul>
               </li>
               <li className="mt-2">
                 <strong>2017-2021:</strong> Educator, Faculty of Nursing, Mahidol University
-                <ul className="list-disc list-inside ml-5 mt-1">
+                <ul className="list-disc list-inside ml-2 mt-1">
                   <li>Managed scholarships for undergraduate students.</li>
                   <li>Organized the APAHL Forum 2019, an international conference.</li>
                   <li>Presented award-winning research on English skills development.</li>
@@ -127,7 +130,7 @@ function Profile() {
               </li>
               <li className="mt-2">
                 <strong>2015-2016:</strong> Academic Officer, Bangkok Medical Service Department
-                <ul className="list-disc list-inside ml-5 mt-1">
+                <ul className="list-disc list-inside ml-2 mt-1">
                   <li>Organized computer workshops for medical personnel.</li>
                   <li>Participated in WFME international medical school standards training.</li>
                   <li>Managed quality assurance for the Clinical Medical Education Center.</li>
@@ -136,28 +139,32 @@ function Profile() {
             </>
           ) : (
             <>
-              <li className='mt-3'>
-                <strong>2564-ปัจจุบัน:</strong> <span className='text-blue-500'>นักวิชาการศึกษา</span>
+              <div className='mt-3'>
+                <strong>2564-ปัจจุบัน </strong>
+                <br />
+                <span className='text-blue-500'>นักวิชาการศึกษา</span>
                 <span>  |  </span>
-                <small>คณะแพทยศาสตร์วชิรพยาบาล</small>
-                <ul className="list-disc list-inside ml-5 mt-1">
+                <span>คณะแพทยศาสตร์วชิรพยาบาล</span>
+                <ul className="list-disc list-inside ml-2 mt-1">
                   <li>จัดตารางเรียนสำหรับนักศึกษาแพทย์ก่อนคลินิก</li>
                   <li>ดำเนินการกระบวนการสอนและการเรียนรู้</li>
                 </ul>
-              </li>
-              <li className='mt-3'>
-                <strong>2560-2564:</strong> <span className='text-blue-500'>นักวิชาการศึกษา</span>
+              </div>
+              <div className='mt-3'>
+                <strong>2560-2564 </strong>
+                <br />
+                <span className='text-blue-500'>นักวิชาการศึกษา</span>
                 <span>  |  </span>
-                <small>คณะพยาบาลศาสตร์ มหาวิทยาลัยมหิดล</small>
-                <ul className="list-disc list-inside ml-5 mt-1">
+                <span>คณะพยาบาลศาสตร์ มหาวิทยาลัยมหิดล</span>
+                <ul className="list-disc list-inside ml-2 mt-1">
                   <li>จัดการทุนการศึกษาสำหรับนักศึกษาระดับปริญญาตรี</li>
                   <li>จัดการประชุม APAHL Forum 2019 ซึ่งเป็นการประชุมระดับนานาชาติ</li>
                   <li>นำเสนอผลงานวิจัยที่ได้รับรางวัลเกี่ยวกับการพัฒนาทักษะภาษาอังกฤษ</li>
                 </ul>
-              </li>
+              </div>
               {/* <li className="mt-2">
                 <strong>2558-2559:</strong> เจ้าหน้าที่วิชาการ, กรมการแพทย์กรุงเทพมหานคร
-                <ul className="list-disc list-inside ml-5 mt-1">
+                <ul className="list-disc list-inside ml-2 mt-1">
                   <li>จัดการอบรมคอมพิวเตอร์สำหรับบุคลากรทางการแพทย์</li>
                   <li>เข้าร่วมการฝึกอบรมมาตรฐานโรงเรียนแพทย์นานาชาติ WFME</li>
                   <li>จัดการประกันคุณภาพสำหรับศูนย์การศึกษาทางการแพทย์คลินิก</li>
@@ -173,7 +180,7 @@ function Profile() {
         <h2 className="text-2xl font-semibold text-gray-700 flex items-center">
           <FaTools className="mr-2" /> {language === 'en' ? 'Skills' : 'ทักษะ'}
         </h2>
-        <ul className="list-disc list-inside mt-2 text-gray-600">
+        <ul className="list-disc list-inside ml-2 mt-1">
           {language === 'en' ? (
             <>
               <li>Critical Thinking, Problem-Solving, and Analytical Skills</li>
@@ -197,7 +204,8 @@ function Profile() {
         <h2 className="text-2xl font-semibold text-gray-700 flex items-center">
           <FaAward className="mr-2" /> {language === 'en' ? 'Awards' : 'รางวัล'}
         </h2>
-        <ul className="list-disc list-inside mt-2 text-gray-600">
+        <ul className="list-disc list-inside ml-2 mt-1">
+
           {language === 'en' ? (
             <li>
               Received a consolation prize for the oral presentation titled
