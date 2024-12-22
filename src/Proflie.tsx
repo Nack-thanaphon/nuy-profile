@@ -297,7 +297,8 @@ function Profile() {
 
           <motion.div className="w-fit">
             <a
-              href={language === "en" ? "/cv-en.pdf" : "/cv-th.pdf"}
+              // href={language === "en" ? "/cv-en.pdf" : "/cv-th.pdf"}
+              href="/PHIENGPEN_PANJAN_Resume.pdf"
               target="_blank"
               className="bg-blue-300 hover:bg-blue-400 px-3 py-1 rounded-lg flex items-center space-x-2"
             >
