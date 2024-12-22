@@ -57,6 +57,8 @@ interface Content {
   contact: ContactInfo;
   education: {
     name: string
+    faculty: string
+    year: string
   }[];
   skills: Skill[];
   languages: { name: string; level: string }[];
@@ -78,10 +80,14 @@ const textContent: Record<string, Content> = {
     },
     education: [
       {
-        name: "Bachelor of Arts (Religious Studies), Mahidol University (2011-2014)"
+        name: "Bachelor of Arts (Religious Studies)",
+        faculty: "Mahidol University",
+        year: "(2011-2014)"
       },
       {
-        name: "English-French Program, Satri Wat Rakhang School (2006-2011)"
+        name: "English-French Program, (2006-2011)",
+        faculty: "Satri Wat Rakhang School ",
+        year: "(2006-2011)"
       }
     ],
     skills: [
@@ -184,10 +190,14 @@ const textContent: Record<string, Content> = {
     },
     education: [
       {
-        name: "ศิลปศาสตรบัณฑิต (ศาสนศึกษา), มหาวิทยาลัยมหิดล (2554-2557)",
+        name: "ศิลปศาสตรบัณฑิต (ศาสนศึกษา)",
+        faculty: "คณะศิลปศาสตร์ มหาวิทยาลัยมหิดล",
+        year: "(2554-2557)"
       },
       {
-        name: "โปรแกรมภาษาอังกฤษ-ฝรั่งเศส, โรงเรียนสตรีวัดระฆัง (2549-2554)",
+        name: "โปรแกรมภาษาอังกฤษ-ฝรั่งเศส",
+        faculty: "โรงเรียนสตรีวัดระฆัง",
+        year: "(2549-2554)"
       }
     ],
     skills: [
@@ -354,7 +364,11 @@ function Profile() {
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
           {content.education.map((edu, index) => (
-            <li key={index}>{edu.name}</li>
+            <>
+              <b>{edu.year}</b>
+              <p>- {edu.faculty}</p>
+              <p>- {edu.name}</p>
+            </>
           ))}
         </ul>
       </div>
