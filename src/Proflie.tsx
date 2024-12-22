@@ -86,7 +86,7 @@ const textContent: Record<string, Content> = {
       },
       {
         name: "English-French Program, (2006-2011)",
-        faculty: "Satri Wat Rakhang School ",
+        faculty: "Satri Wat Rakhang School",
         year: "(2006-2011)"
       }
     ],
@@ -124,11 +124,11 @@ const textContent: Record<string, Content> = {
         date: "2019",
         organization: "Faculty of Nursing, Mahidol University"
       },
-      {
-        title: "Excellence in Academic Support",
-        date: "2018",
-        organization: "Bangkok Medical Service Department"
-      }
+      // {
+      //   title: "Excellence in Academic Support",
+      //   date: "2018",
+      //   organization: "Bangkok Medical Service Department"
+      // }
     ],
     languages: [
       { name: "Thai", level: "Native" },
@@ -234,11 +234,11 @@ const textContent: Record<string, Content> = {
         date: "2562",
         organization: "คณะพยาบาลศาสตร์ มหาวิทยาลัยมหิดล"
       },
-      {
-        title: "ความเป็นเลิศในการสนับสนุนวิชาการ",
-        date: "2561",
-        organization: "กรมการแพทย์กรุงเทพมหานคร"
-      }
+      // {
+      //   title: "ความเป็นเลิศในการสนับสนุนวิชาการ",
+      //   date: "2561",
+      //   organization: "กรมการแพทย์กรุงเทพมหานคร"
+      // }
     ],
     languages: [
       { name: "ไทย", level: "ภาษาแม่" },
@@ -366,8 +366,8 @@ function Profile() {
           {content.education.map((edu) => (
             <>
               <b>{edu.year}</b>
-              <p>- {edu.faculty}</p>
               <p>- {edu.name}</p>
+              <p>- {edu.faculty}</p>
             </>
           ))}
         </ul>
