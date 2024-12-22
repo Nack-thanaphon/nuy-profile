@@ -1,5 +1,5 @@
 import React from 'react';
-import Profile from './Profile';
+import Profile from './Proflie';
 
 const App: React.FC = () => {
   return (
