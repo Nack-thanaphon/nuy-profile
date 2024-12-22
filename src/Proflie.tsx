@@ -363,7 +363,7 @@ function Profile() {
           {language === "en" ? "Education" : "ประวัติการศึกษา"}
         </h2>
         <ul className="list-disc list-inside mt-2 text-gray-600">
-          {content.education.map((edu, index) => (
+          {content.education.map((edu) => (
             <>
               <b>{edu.year}</b>
               <p>- {edu.faculty}</p>
